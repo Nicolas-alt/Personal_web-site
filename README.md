@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+    <h1> Hi there! 
+        <img src="./src/assets/icons/hi.gif" width="15" />
+        , I'm Nicolas Jiménez.
+        A passionate frontend  dev. 
+        <img src="./src/assets/icons/react.png" width="25" />
+    </h1>
+</div>
+<br />
 
-## Getting Started
 
-First, run the development server:
+<div align="center">
+    <img src="./src/assets/icons/red.gif" width="180" />
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<p align="center">
+    <a href="https://github.com/anuraghazra/github-readme-stats" style="margin: 50px">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nicolas-alt&layout=compact" />
+    </a>
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<div align="center">
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 👨‍💻 All of my projects are available [here](https://nicolas-alt.github.io/portafolio-v2/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<hr />
+<br />
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- Connect -->
+<h3 align="center">Get in touch with me:</h3>
+    <a align="center" href="https://twitter.com/nicolas35103573" target="blank">
+        <img align="center" src="./src/assets/icons/twitter.png" alt="nicolas35103573" />
+    </a>
+      <a align="center" href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/" target="blank" >
+        <img align="center" src="./src/assets/icons/linkedin.png" alt="nicolas35103573" style="margin-right: 25px" />
+    </a>
+</div>
