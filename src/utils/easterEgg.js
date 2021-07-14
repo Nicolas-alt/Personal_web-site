@@ -1,5 +1,8 @@
-export const easter = _ => {
-  console.log(`%c
+/* eslint-disable no-irregular-whitespace */
+export const easter = () => {
+  // eslint-disable-next-line no-console
+  console.log(
+    `%c
 ---------------------------------------
 |         Hi there! You're on           |
 ---------------------------------------
@@ -27,5 +30,8 @@ export const easter = _ => {
                                                         
 
                 `,
-    "font-family:monospace; color:#9B59B6;");
+    'font-family:monospace; color:#9B59B6;'
+  )
 }
+
+export default easter

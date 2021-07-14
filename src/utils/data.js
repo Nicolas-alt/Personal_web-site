@@ -1,4 +1,4 @@
-export const data = [
+export default [
   {
     name: 'Rick-Spa',
     description: 'An Awesome project',
@@ -7,4 +7,4 @@ export const data = [
     technologies: [],
     image: '../assets/img/rick.png',
   },
-];
+]

@@ -1,35 +1,41 @@
-import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import Routes from '../routes/Routes';
+import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import Routes from '../routes/Routes'
 
-import '../assets/sass/components/WrapperNav.scss';
+import '../assets/sass/components/WrapperNav.scss'
 
 const WrapperNav = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(false)
   const [width, setWidth] = useState(document.body.scrollWidth)
 
   const handleToggleMenu = () => {
-    setMenu(!menu);
-  };
+    setMenu(!menu)
+  }
 
-  useEffect((...menu) => {
-    window.addEventListener('resize', (e) => {
-      const { innerWidth } = e.target
-      setWidth(innerWidth)
-    });
+  useEffect(
+    (...menu) => {
+      window.addEventListener('resize', (e) => {
+        const { innerWidth } = e.target
+        setWidth(innerWidth)
+      })
 
-    if (menu && width < 900) {
-      setMenu(!menu)
-    }
-  }, [width])
+      if (menu && width < 900) {
+        setMenu(!menu)
+      }
+    },
+    [width]
+  )
 
   return (
     <section className="section--principal">
       <div className="div-containerMenu">
         <header className={menu ? 'header-open' : 'header-close'}>
-          <i className="i--menu bx bx-right-arrow" onClick={handleToggleMenu}></i>
+          <i
+            className="i--menu bx bx-right-arrow"
+            onClick={handleToggleMenu}
+          ></i>
           <nav>
-            <ul className={menu ? "ul--links--open" : "ul--links--close"}>
+            <ul className={menu ? 'ul--links--open' : 'ul--links--close'}>
               <li>
                 <NavLink exact activeClassName="link-active" to="/">
                   <i className="i--iconsNav bx bx-home-alt"></i>
@@ -53,7 +59,11 @@ const WrapperNav = () => {
                 <ul id="ul--details">
                   <div>
                     <li>
-                      <a href='https://github.com/Nicolas-alt' target='_blank' rel="noreferrer">
+                      <a
+                        href="https://github.com/Nicolas-alt"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="i--social bx bxl-github"></i>
                       </a>
                     </li>
@@ -67,25 +77,29 @@ const WrapperNav = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="https://twitter.com/Nicolas35103573" target="_blank"
-                        rel="noreferrer">
+                      <a
+                        href="https://twitter.com/Nicolas35103573"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <i className="i--social bx bxl-twitter"></i>
                       </a>
                     </li>
                   </div>
                   <hr />
-                  <li>
-                    Created by Nicolas
-                  </li>
+                  <li>Created by Nicolas</li>
                 </ul>
               </div>
             </ul>
 
             {/*Social links */}
-            <ul className={menu ? "ul--social--close" : 'ul--social--open'}>
+            <ul className={menu ? 'ul--social--close' : 'ul--social--open'}>
               <li className="li--social">
-                <a href='https://github.com/Nicolas-alt' target='_blank'
-                  rel="noreferrer">
+                <a
+                  href="https://github.com/Nicolas-alt"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="i--social bx bxl-github"></i>
                 </a>
               </li>
@@ -101,8 +115,11 @@ const WrapperNav = () => {
               </li>
 
               <li className="li--social">
-                <a href="https://twitter.com/Nicolas35103573" target="_blank"
-                  rel="noreferrer">
+                <a
+                  href="https://twitter.com/Nicolas35103573"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <i className="i--social bx bxl-twitter"></i>
                 </a>
               </li>
@@ -110,11 +127,14 @@ const WrapperNav = () => {
           </nav>
         </header>
       </div>
-      <div className="div--router" onClick={ menu ? handleToggleMenu : undefined}>
+      <div
+        className="div--router"
+        onClick={menu ? handleToggleMenu : undefined}
+      >
         <Routes />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default WrapperNav;
+export default WrapperNav
