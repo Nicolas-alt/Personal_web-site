@@ -1,6 +1,6 @@
 import './experience.css'
 
 const Experience = () => (
-  <section className="section_experience">Experience</section>
+  <section className="section_experience">Recent Works</section>
 )
 export default Experience

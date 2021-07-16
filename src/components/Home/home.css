@@ -1,4 +1,23 @@
 .section_home {
+  display: grid;
+  place-content: center;
   height: 100vh;
   width: 100vw;
+  background-color: #fff1bd;
+}
+
+.section_home p:nth-child(1) {
+  font-size: 2.3em;
+}
+
+.section_home h1 {
+  font-size: 5em;
+  background: linear-gradient(120deg, #ffbf85, #fff1bd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section_home p:nth-child(3) {
+  font-size: 3em;
 }

@@ -5,7 +5,7 @@ const About = () => {
     <section className="section__about">
       <h2>About Me</h2>
       {/* Only for short devices */}
-      <div className="div--text">
+      <div className="div__text">
         <h3>I&apos;m a web developer</h3>
         <p>
           Desarrollador front-end con React js, estudiante en una tecnología en

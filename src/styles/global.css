@@ -1,0 +1,23 @@
+html, body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Heebo', sans-serif;
+  background-color: #fafaff;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a { text-decoration: none; }
+
+
+main {
+  min-height: 100%;
+  min-width: 100%;
+}
+
