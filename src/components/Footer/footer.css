@@ -1,3 +1,8 @@
+:root {
+    --footer-color: #420FE7;
+}
+
+
 footer {
   position: relative;
   z-index: 10;
@@ -6,8 +11,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  background-color: #3910C5;
-  min-height: 150px;
+  background-color: var(--footer-color);
+  min-height: 180px;
   color: white;
   margin-bottom: -10px;
 }
@@ -57,4 +62,10 @@ footer div a:hover {
 
 footer div a:hover i {
   color: #02021e;
+}
+
+footer p {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: .9em;
 }

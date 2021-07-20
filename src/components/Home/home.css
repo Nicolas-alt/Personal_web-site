@@ -3,8 +3,19 @@
   place-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: #fff1bd;
+  background-color: #420FE7;
+  color: white;
 }
+
+.ul__links{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  list-style: none;
+  margin-right: 2em;
+}
+
 
 .section_home p:nth-child(1) {
   font-size: 2.3em;
@@ -20,4 +31,6 @@
 
 .section_home p:nth-child(3) {
   font-size: 3em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
 }

@@ -20,6 +20,35 @@ const Home = () => {
 
   return (
     <motion.section className="section_home" variants={homeVariants}>
+      <ul className="ul__links">
+        <li>
+          <a
+            href="https://github.com/Nicolas-alt"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="i__socialLink bx bxl-github" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/Nicolas35103573"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="i__socialLink bx bxl-twitter" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="i__socialLink bx bxl-linkedin" />
+          </a>
+        </li>
+      </ul>
       <p>Hi, my name is</p>
       <AnimateLetters text="Nicolas Jiménez" />
       <p>and I code for the web</p>

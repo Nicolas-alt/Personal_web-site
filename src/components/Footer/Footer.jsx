@@ -28,6 +28,7 @@ const Footer = () => {
           <i className="bx bxl-linkedin" />
         </a>
       </div>
+      <p>© 2021 Created by Nicolas Jiménez</p>
     </footer>
   )
 }

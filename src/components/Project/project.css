@@ -1,0 +1,22 @@
+.article__project {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 1.5em 0.5em;
+}
+
+.article__project img {
+  object-fit: contain;
+}
+
+.article__project img:hover {
+    transform: scale(.8);
+    animation: transform 2s 2s;
+    cursor: pointer;
+}
+
+@media (max-width: 868px) {
+  .article__project {
+    flex-direction: column-reverse;
+  }
+}

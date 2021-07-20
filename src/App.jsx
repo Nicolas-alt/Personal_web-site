@@ -3,7 +3,9 @@ import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
+import Modal from './components/Modal/Modal'
 import SocialLinks from './components/SocialLinks/SocialLinks'
+import ProjectProvider from './Providers/ProjectProvider'
 import './styles/global.css'
 import './styles/normalize.css'
 
@@ -27,13 +29,14 @@ const App = () => {
   }, [lastYPos])
 
   return (
-    <>
+    <ProjectProvider>
       <Home />
       <Experience />
       <About />
       <Footer />
+      <Modal />
       <SocialLinks showMenu={shouldShowActions} />
-    </>
+    </ProjectProvider>
   )
 }
 
