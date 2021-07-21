@@ -1,14 +1,48 @@
 .section__about {
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   max-width: 100vw;
+}
+
+.div_about {
+  display: flex;
+}
+
+@media screen and (max-width: 870px) {
+  .div_about {
+    flex-direction: column;
+  }
 }
 
 .div__text {
   padding: 0 2em;
 }
 
+.div__text h2 {
+  text-align: center;
+  color: white;
+  font-size: 5em;
+  margin: 1em 0;
+}
+
 .div__text p {
   overflow-wrap: break-word;
+}
+
+
+.div__earth {
+  position: relative;
+  min-height: 100vh;
+}
+
+.h3__earthText {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  z-index: 20;
+  font-size: 3em;
+  height: 100%;
+  width: 100%;
 }

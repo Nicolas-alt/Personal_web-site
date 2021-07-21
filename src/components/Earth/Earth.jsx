@@ -8,7 +8,6 @@ import earhCloudsMap from '../../assets/textures/earth_clouds.jpg'
 import earthDayMap from '../../assets/textures/earth_daymap.jpg'
 import earthNormalMap from '../../assets/textures/earth_normal_map.jpg'
 import earthSpecularMap from '../../assets/textures/earth_specular_map.jpg'
-import SpinnerLoader from '../Loader/SpinnerLoader'
 // import earthNight from '../../assets/textures/earth_nightmap.jpg'
 
 const Scene = () => {
@@ -42,8 +41,8 @@ const Scene = () => {
 
 const Earth = () => {
   return (
-    <Canvas>
-      <Suspense fallback={<SpinnerLoader />}>
+    <Canvas style={{ height: '100vh', zIndex: 5 }}>
+      <Suspense fallback={null}>
         <Scene />
       </Suspense>
     </Canvas>

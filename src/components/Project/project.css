@@ -1,18 +1,84 @@
 .article__project {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   color: white;
-  padding: 1.5em 0.5em;
+  padding: 1.5em 0;
+}
+
+.div__info {
+  position: relative;
+  left: 1.5em;
+  z-index: 10;
+  display: grid;
+  grid-template-rows: 50px auto auto 20px .5fr;
+  padding-left: 3em;
+  width: 100%;
+}
+
+.div__info h4 {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+.div__info h2 {
+  font-weight: 500;
+  font-size: 4em;
+}
+
+.div__info p,
+a {
+  font-weight: 100;
+}
+
+.div__info a {
+  color: white;
+  position: relative;
+}
+
+.div__info a::after {
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  content: "";
+  height: 1px;
+  width: 2em;
+  background-color: white;
+}
+
+.div__info a:hover::after {
+  width: 6em;
+  transition: width .5s;
+}
+
+.div__stackContainer {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.div__stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div__stack i {
+  font-size: 4em;
+}
+
+.div__stack span {
+  font-size: 1.1em;
+  font-weight: 100;
 }
 
 .article__project img {
   object-fit: contain;
+  border-radius: 5px;
 }
 
 .article__project img:hover {
-    transform: scale(.8);
-    animation: transform 2s 2s;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 868px) {
