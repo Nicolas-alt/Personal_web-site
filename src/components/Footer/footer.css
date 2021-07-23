@@ -1,7 +1,6 @@
 :root {
-    --footer-color: #02021E;
+  --footer-color: #02021e;
 }
-
 
 footer {
   position: relative;
@@ -11,24 +10,26 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  background-color: var(--footer-color);
+  margin-bottom: -10px;
   min-height: 180px;
   color: white;
-  margin-bottom: -10px;
+  background-color: var(--footer-color);
 }
 
 footer h3 {
+  margin-bottom: 1em;
   color: inherit;
   font-weight: 100;
 }
 
 footer button {
-  background-color: transparent;
-  border: 1px solid white;
-  color: inherit;
   height: 40px;
   width: 150px;
   border-radius: 10px;
+  margin-bottom: 1em;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid white;
   font-weight: 100;
   cursor: pointer;
 }
@@ -36,23 +37,23 @@ footer button {
 footer div {
   display: flex;
   justify-content: center;
-  width: 50%;
+  margin-bottom: 1em;
 }
 
 footer div a {
   display: grid;
   place-items: center;
-  border-radius: 50%;
   height: 50px;
   width: 50px;
   margin-top: 10px;
   margin-right: 10px;
+  border-radius: 50%;
   border: 1px solid white;
 }
 
 footer div a i {
-  font-size: 1.5em;
   color: white;
+  font-size: 1.5em;
 }
 
 footer div a:hover {
@@ -65,7 +66,38 @@ footer div a:hover i {
 }
 
 footer p {
-    margin-top: 10px;
-    font-weight: 100;
-    font-size: .9em;
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 868px) {
+  footer div {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  footer div {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  footer h3,
+  p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 278px) {
+  footer div a {
+    height: 40px;
+    width: 40px;
+    margin-right: 0;
+    border-radius: 50%;
+  }
+
+  footer div a i {
+    font-size: 1em;
+  }
 }
