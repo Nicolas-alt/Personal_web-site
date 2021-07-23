@@ -9,7 +9,8 @@ const Project = ({
   styleName,
   textStyleName,
   nameTec,
-  imageProject
+  imageProject,
+  urlProject
 }) => {
   return (
     <TiltWrapper>
@@ -18,7 +19,9 @@ const Project = ({
           <h4>{typeProject}</h4>
           <h2>{title}</h2>
           <p>{description}</p>
-          <a href="https://f.com">View project</a>
+          <a href={urlProject} target="_blank" rel="noreferrer">
+            View project
+          </a>
           <div className="div__stackContainer">
             {nameTec.map(({ name, ico }) => (
               <div
@@ -47,7 +50,8 @@ Project.propTypes = {
   textStyleName: PropTypes.string.isRequired,
   // eslint-disable-next-line react/forbid-prop-types
   nameTec: PropTypes.array.isRequired,
-  imageProject: PropTypes.string.isRequired
+  imageProject: PropTypes.string.isRequired,
+  urlProject: PropTypes.string.isRequired
 }
 
 export default Project

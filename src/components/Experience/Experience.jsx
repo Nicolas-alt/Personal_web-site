@@ -18,6 +18,7 @@ const Experience = () => (
         { name: 'Css3', ico: 'css3' }
       ]}
       imageProject={imageDvr}
+      urlProject="https://developerroad.herokuapp.com/"
     />
     <Project
       typeProject="Chat - Full-Stack"
@@ -33,6 +34,7 @@ const Experience = () => (
         { name: 'NodeJS', ico: 'nodejs' }
       ]}
       imageProject={imagechat}
+      urlProject="https://github.com/Nicolas-alt/Sluck-web"
     />
   </section>
 )
