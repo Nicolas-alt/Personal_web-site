@@ -102,10 +102,6 @@ a {
   border-radius: 5px;
 }
 
-.article__project img:hover {
-  cursor: pointer;
-}
-
 @media (max-width: 868px) {
   .article__project--normal,
   .article__project--reverse {
