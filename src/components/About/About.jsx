@@ -1,5 +1,7 @@
+import { OrbitControls, Stars } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
+import { memo, Suspense } from 'react'
 import Earth from '../Earth/Earth'
-import meImage from '../../assets/img/me.jpg'
 import './about.css'
 
 const About = () => {
@@ -16,16 +18,32 @@ const About = () => {
             desarrollo de aplicaciones híbridas con React-Native y Flutter.
           </p>
         </div>
-        <img src={meImage} alt="Developer" />
       </div>
       <div className="div__earth">
         <h3 className="h3__earthText">
           Ready to work in an <span>awesome</span> ideas.
         </h3>
-        <Earth />
+        <Canvas
+          style={{ height: '100vh' }}
+          camera={{ zoom: 20, position: [40, 5, 10] }}
+        >
+          <ambientLight intensity={0.5} />
+          <Suspense fallback={null}>
+            <Earth />
+            <Stars
+              radius={100}
+              depth={1}
+              count={5000}
+              factor={4}
+              saturation={0}
+              fade
+            />
+          </Suspense>
+          <OrbitControls autoRotate />
+        </Canvas>
       </div>
     </section>
   )
 }
 
-export default About
+export default memo(About)

@@ -6,8 +6,8 @@ import Home from './components/Home/Home'
 import Modal from './components/Modal/Modal'
 import SocialLinks from './components/SocialLinks/SocialLinks'
 import ProjectProvider from './Providers/ProjectProvider'
-import './styles/global.css'
 import './styles/normalize.css'
+import './styles/global.css'
 
 const App = () => {
   const [shouldShowActions, setShouldActions] = useState(false)
