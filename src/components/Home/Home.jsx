@@ -63,6 +63,11 @@ const Home = () => {
               <br />
               <AnimateLetters text="Jiménez" styleName="h1__lastName" />
             </div>
+            <div>
+              <AnimateLetters text="Front" styleName="h1__firtsName" />
+              <br />
+              <AnimateLetters text="End Developer" styleName="h1__lastName" />
+            </div>
           </div>
           <div className="div__homeContent">
             <Canvas

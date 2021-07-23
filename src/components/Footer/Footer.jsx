@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <footer>
       <h3>Interested to work with me?</h3>
-      <button type="button">Let&apos;s talk</button>
+      <a className="a__contact" href="mailto:contactnicolas31@gmail.com">
+        Let&apos;s talk
+      </a>
       <div>
         <a
           href="https://github.com/Nicolas-alt"

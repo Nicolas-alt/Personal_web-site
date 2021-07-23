@@ -1,18 +1,12 @@
 .section__about {
-  color: white;
   min-height: 100vh;
   width: 100vw;
   max-width: 100vw;
+  color: white;
 }
 
 .div_about {
   display: flex;
-}
-
-@media screen and (max-width: 870px) {
-  .div_about {
-    flex-direction: column;
-  }
 }
 
 .div__text {
@@ -20,16 +14,18 @@
 }
 
 .div__text h2 {
-  text-align: center;
+  margin: 1em 0;
   color: white;
   font-size: 5em;
-  margin: 1em 0;
+  text-align: center;
 }
 
 .div__text p {
   overflow-wrap: break-word;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 100;
 }
-
 
 .div__earth {
   position: relative;
@@ -38,11 +34,30 @@
 
 .h3__earthText {
   position: absolute;
+  z-index: 20;
   display: grid;
   place-content: center;
-  text-align: center;
-  z-index: 20;
-  font-size: 3em;
   height: 100%;
   width: 100%;
+  font-size: 3em;
+  text-align: center;
+}
+
+@media screen and (max-width: 870px) {
+  .div_about {
+    flex-direction: column;
+  }
+
+  .div__text p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .div__text h2 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 278px) {
 }

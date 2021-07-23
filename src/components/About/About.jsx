@@ -10,18 +10,50 @@ const About = () => {
       <div className="div_about">
         <div className="div__text">
           <h2>About Me</h2>
-          <h3>I&apos;m a web developer</h3>
           <p>
-            Desarrollador front-end con React js, estudiante en una tecnología
-            en desarrollo de software, apasionado por el desarrollo web. En sus
-            ratos libres disfruta unas buenas partidas en Pubg. Me interesa el
-            desarrollo de aplicaciones híbridas con React-Native y Flutter.
+            Hello! I&apos;m Nicolas Jiménez front-end developer i love building
+            interfaces and code interactive productucts, I&apos;m looking for a
+            full time position as a front-end developer.
           </p>
+          <p>
+            My interest in web development started back in 2017 when I decided
+            to try undertand the console web tools, fast-forward to today My
+            main focus these days is building accessible, inclusive products and
+            digital experiences.
+          </p>
+          <p>
+            Here are a few technologies I&apos;ve been working with recently:
+          </p>
+          <div
+            className="div__stackContainer"
+            style={{ justifyContent: 'space-evenly', width: '90%' }}
+          >
+            <div className="div__stack">
+              <i className="bx bxl-react" />
+              <span>ReactJS</span>
+            </div>
+            <div className="div__stack">
+              <i className="bx bxl-bootstrap" />
+              <span>Bootstrap</span>
+            </div>
+            <div className="div__stack">
+              <i className="bx bxl-sass" />
+              <span>Sass</span>
+            </div>
+            <div className="div__stack">
+              <i className="bx bxl-nodejs" />
+              <span>NodeJS</span>
+            </div>
+            <div className="div__stack">
+              <i className="bx bxl-redux" />
+              <span>Redux</span>
+            </div>
+          </div>
         </div>
       </div>
       <div className="div__earth">
         <h3 className="h3__earthText">
-          Ready to work in an <span>awesome</span> ideas.
+          Ready to work in <span>increibles</span> ideas.
         </h3>
         <Canvas
           style={{ height: '100vh' }}

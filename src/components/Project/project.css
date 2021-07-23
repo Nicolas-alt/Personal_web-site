@@ -22,15 +22,22 @@
   width: 100%;
 }
 
+.div__info p {
+  overflow-wrap: break-word;
+  text-align: justify;
+  padding-right: 1em;
+  width: 90%;
+}
+
 .div__info--normal {
   left: 1.5em;
   padding-left: 3em;
 }
 
 .div__info--reverse {
-  background-color: hsla(0, 0%, 0%, 0.68);
+  background-color: hsla(249, 100%, 75%, 0.267);
   right: 2em;
-  padding: 1em 2em;
+  padding: 1em;
 }
 
 .div__info h4 {
@@ -105,18 +112,24 @@ a {
     flex-direction: column-reverse;
   }
 
+  .div__info {
+    grid-template-rows: 30px auto auto 20px 0.5fr;
+  }
+
   .div__info--normal {
     left: 0;
-    padding-left: 0;
+    padding-left: 1em;
   }
 
   .div__info--reverse {
     background-color: transparent;
     right: 0;
     padding: 0;
+    padding-left: 1em;
   }
 
   .div__info h4 {
+    margin-top: 0.5em;
     font-size: 1em;
   }
 
