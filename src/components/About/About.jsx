@@ -11,7 +11,7 @@ const About = () => {
         <div className="div__text">
           <h2>About Me</h2>
           <p>
-            Hello! I&apos;m Nicolas Jiménez front-end developer i love building
+            Hello! I&apos;m Nicolas Jiménez front-end developer I love building
             interfaces and code interactive productucts, I&apos;m looking for a
             full time position as a front-end developer.
           </p>
