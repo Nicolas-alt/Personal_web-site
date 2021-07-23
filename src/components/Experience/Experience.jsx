@@ -23,10 +23,7 @@ const Experience = () => (
     <Project
       typeProject="Chat - Full-Stack"
       title="Sluck"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ipsum,
-          error sequi laudantium aperiam consectetur, ad illum animi laborum
-          dolor quaerat dolorem! Tempore velit fuga officiis provident maiores
-          obcaecati amet."
+      description="Full stack chat application where you can share your thoughts and meet with your friends."
       styleName="article__project article__project--reverse"
       textStyleName="div__info div__info--reverse"
       nameTec={[
