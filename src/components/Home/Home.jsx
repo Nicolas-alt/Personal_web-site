@@ -1,10 +1,9 @@
-// import { useEffect } from 'react'
-// import { easter } from '../../utils/easterEgg'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { motion } from 'framer-motion'
 import PropTypes from 'prop-types'
-import { memo, Suspense } from 'react'
+import { memo, Suspense, useEffect } from 'react'
+import { easter } from '../../utils/easterEgg'
 import Programmer from '../Programmer/Programmer'
 import TiltWrapper from '../TiltWrapper/TiltWrapper'
 import './home.css'
@@ -19,9 +18,9 @@ const homeVariants = {
 }
 
 const Home = () => {
-  // useEffect(() => {
-  //   easter()
-  // }, [])
+  useEffect(() => {
+    easter()
+  }, [])
 
   return (
     <TiltWrapper>
