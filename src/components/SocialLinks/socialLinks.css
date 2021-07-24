@@ -1,6 +1,7 @@
 .ul_social {
-  position: fixed;
   display: flex;
+  position: fixed;
+  z-index: 30;
   top: 90%;
   left: 50%;
   transform: translateX(-50%);
