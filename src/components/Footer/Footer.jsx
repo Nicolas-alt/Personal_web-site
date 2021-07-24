@@ -1,11 +1,22 @@
+import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import './footer.css'
 
 const Footer = () => {
+  const [lenguage, setLenguage] = useState(true)
+  const [t, i18n] = useTranslation('global')
+  const letters = lenguage ? 'en' : 'es'
+
+  const handleChangeLenguage = () => {
+    i18n.changeLanguage(letters)
+    setLenguage(!lenguage)
+  }
+
   return (
     <footer>
-      <h3>Interested to work with me?</h3>
+      <h3>{t('footer.h3')}</h3>
       <a className="a__contact" href="mailto:contactnicolas31@gmail.com">
-        Let&apos;s talk
+        {t('footer.a')}
       </a>
       <div>
         <a
@@ -30,7 +41,10 @@ const Footer = () => {
           <i className="bx bxl-linkedin" />
         </a>
       </div>
-      <p>© 2021 Created by Nicolas Jiménez</p>
+      <p>{t('footer.p')}</p>
+      <button type="button" onClick={() => handleChangeLenguage()}>
+        {letters}
+      </button>
     </footer>
   )
 }

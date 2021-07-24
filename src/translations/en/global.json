@@ -1,0 +1,23 @@
+{
+  "home": {
+    "p": "Hi there!, I code for the web and my name is"
+  },
+  "experience": {
+    "title": "Experience",
+    "project1Text": "Full stack chat application where you can share your thoughts and meet with your friends.",
+    "projectLinkText": "View project",
+    "project2Text": "The platform where Developers share knowledge about technology and programming, I helped to Build a responsive web app using Django and Bootstrap that allows users to write tech post."
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Hello! I'm Nicolas Jiménez front-end developer I love building interfaces and code interactive productucts, I'm looking for a full time position as a front-end developer.",
+    "p2": "My interest in web development started back in 2017 when I decided to try undertand the console web tools, fast-forward to today My main focus these days is building accessible, inclusive products and digital experiences.",
+    "p3": "Here are a few technologies I've been working with recently:",
+    "finalText": "Ready to work in increibles ideas."
+  },
+  "footer": {
+      "h3": "Interested to work with me?",
+      "a": "Let's talk",
+      "p": "© 2021 Created by Nicolas Jiménez"
+  }
+}

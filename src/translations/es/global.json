@@ -1,0 +1,23 @@
+{
+  "home": {
+    "p": "¡Hola! Yo codifico para la web y mi nombre es"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "project1Text": "Aplicación de chat full-stack donde puede compartir sus pensamientos y reunirse con sus amigos.",
+    "projectLinkText": "Ver Proyecto",
+    "project2Text": "La plataforma donde los desarrolladores comparten conocimientos sobre tecnología y programación, ayudé a construir una aplicación web responsive usando Django y Bootstrap la cual permite a los usuarios escribir post sobre tecnología."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "¡Hola! Soy Nicolas Jiménez, desarrollador front-end. Me encanta crear interfaces y codificar productos interactivos. Estoy buscando un puesto de tiempo completo como desarrollador front-end.",
+    "p2": "Mi interés en el desarrollo web comenzó en 2017 cuando decidí investigar qué eran las dev tools, avanzando rápidamente hasta el día de hoy. Mi enfoque principal en estos días es crear productos y experiencias digitales accesibles e inclusivos.",
+    "p3": "Aquí hay algunas tecnologías con las que he estado trabajando recientemente:",
+    "finalText": "Listo para trabajar en ideas increibles."
+  },
+  "footer": {
+    "h3": "¿Interesad@ en trabajar conmigo?",
+    "a": "¡Hablemos!",
+    "p": "© 2021 Creado por Nicolas Jiménez"
+  }
+}

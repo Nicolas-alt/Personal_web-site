@@ -73,6 +73,18 @@ footer p {
   font-size: 0.9em;
 }
 
+footer button {
+  display: grid;
+  place-content: center;
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+footer button:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 868px) {
   footer div {
     justify-content: space-evenly;

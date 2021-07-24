@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { OrbitControls, Stars } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { memo, Suspense } from 'react'
@@ -5,25 +6,15 @@ import Earth from '../Earth/Earth'
 import './about.css'
 
 const About = () => {
+  const [t] = useTranslation('global')
   return (
     <section className="section__about">
       <div className="div_about">
         <div className="div__text">
-          <h2>About Me</h2>
-          <p>
-            Hello! I&apos;m Nicolas Jiménez front-end developer I love building
-            interfaces and code interactive productucts, I&apos;m looking for a
-            full time position as a front-end developer.
-          </p>
-          <p>
-            My interest in web development started back in 2017 when I decided
-            to try undertand the console web tools, fast-forward to today My
-            main focus these days is building accessible, inclusive products and
-            digital experiences.
-          </p>
-          <p>
-            Here are a few technologies I&apos;ve been working with recently:
-          </p>
+          <h2>{t('about.title')}</h2>
+          <p>{t('about.p1')}</p>
+          <p>{t('about.p2')}</p>
+          <p>{t('about.p3')}</p>
           <div
             className="div__stackContainer"
             style={{ justifyContent: 'space-evenly', width: '90%' }}
@@ -52,9 +43,7 @@ const About = () => {
         </div>
       </div>
       <div className="div__earth">
-        <h3 className="h3__earthText">
-          Ready to work in <span>increibles</span> ideas.
-        </h3>
+        <h3 className="h3__earthText">{t('about.finalText')}</h3>
         <Canvas
           style={{ height: '100vh' }}
           camera={{ zoom: 20, position: [40, 5, 10] }}

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { useTranslation } from 'react-i18next'
 import TiltWrapper from '../TiltWrapper/TiltWrapper'
 import './project.css'
 
@@ -12,6 +13,7 @@ const Project = ({
   imageProject,
   urlProject
 }) => {
+  const [t] = useTranslation('global')
   return (
     <TiltWrapper>
       <article className={styleName}>
@@ -20,7 +22,7 @@ const Project = ({
           <h2>{title}</h2>
           <p>{description}</p>
           <a href={urlProject} target="_blank" rel="noreferrer">
-            View project
+            {t('experience.projectLinkText')}
           </a>
           <div className="div__stackContainer">
             {nameTec.map(({ name, ico }) => (

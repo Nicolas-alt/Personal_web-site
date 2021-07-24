@@ -1,6 +1,7 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
 import { memo, Suspense, useEffect } from 'react'
 import { easter } from '../../utils/easterEgg'
@@ -18,6 +19,8 @@ const homeVariants = {
 }
 
 const Home = () => {
+  const [t] = useTranslation('global')
+
   useEffect(() => {
     easter()
   }, [])
@@ -56,7 +59,7 @@ const Home = () => {
         </ul>
         <div className="div__home">
           <div className="div__homeContent">
-            <p>Hi there!, I code for the web and my name is</p>
+            <p>{t('home.p')}</p>
             <div>
               <AnimateLetters text="Nicolas" styleName="h1__firtsName" />
               <br />

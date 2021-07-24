@@ -11,8 +11,7 @@ const Experience = () => {
     {
       typeProject: 'Chat - Full-Stack',
       title: 'Sluck-web',
-      description:
-        'Full stack chat application where you can share your thoughts and meet with your friends.',
+      description: t('experience.project1Text'),
       styleName: 'article__project article__project--normal',
       textStyleName: 'div__info div__info--normal',
       nameTec: [
@@ -25,8 +24,7 @@ const Experience = () => {
     {
       typeProject: 'Blog - Front-end',
       title: 'Developer Road',
-      description:
-        'The platform where Developers share knowledge about technology and programming, I helped to Built a responsive web app using Django and Bootstrap that allows users to write tech post.',
+      description: t('experience.project2Text'),
       styleName: 'article__project article__project--reverse',
       textStyleName: 'div__info div__info--reverse',
       nameTec: [
@@ -61,6 +59,7 @@ const Experience = () => {
             nameTec={nameTec}
             imageProject={imageProject}
             urlProject={urlProject}
+            key={urlProject}
           />
         )
       )}
