@@ -1,9 +1,9 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { motion } from 'framer-motion'
-import { useTranslation } from 'react-i18next'
 import PropTypes from 'prop-types'
 import { memo, Suspense, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import { easter } from '../../utils/easterEgg'
 import Programmer from '../Programmer/Programmer'
 import TiltWrapper from '../TiltWrapper/TiltWrapper'
@@ -59,13 +59,12 @@ const Home = () => {
         </ul>
         <div className="div__home">
           <div className="div__homeContent">
-            <p>{t('home.p')}</p>
             <div>
+              <p>{t('home.p')}</p>
               <AnimateLetters text="Nicolas" styleName="h1__firtsName" />
               <br />
               <AnimateLetters text="Jiménez" styleName="h1__lastName" />
-            </div>
-            <div>
+              <br />
               <AnimateLetters text="Front" styleName="h1__firtsName" />
               <br />
               <AnimateLetters text="End Developer" styleName="h1__lastName" />

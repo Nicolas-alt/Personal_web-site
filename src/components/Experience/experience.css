@@ -16,9 +16,9 @@
   }
 }
 
-@media (max-width: 428px) {
-  .h2_experienceTitle {
-    font-size: 3em;
+@media screen and (max-width: 570px) {
+   .h2_experienceTitle {
+    font-size: 2.5em;
   }
 }
 

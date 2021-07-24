@@ -15,8 +15,8 @@
 }
 
 .section_home h1 {
-  font-size: 8em;
-  line-height: 0.7em;
+  font-size: 8vw;
+  line-height: 0.8em;
 }
 
 .section_home span {
@@ -80,12 +80,6 @@
 
 @media (max-width: 528px) {
   .section_home h1 {
-    font-size: 5.5em;
-  }
-}
-
-@media (max-width: 278px) {
-  .section_home h1 {
-    font-size: 4em;
+    font-size: 13vw;
   }
 }
