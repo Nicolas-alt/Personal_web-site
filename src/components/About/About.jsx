@@ -24,20 +24,20 @@ const About = () => {
               <span>ReactJS</span>
             </div>
             <div className="div__stack">
-              <i className="bx bxl-bootstrap" />
-              <span>Bootstrap</span>
-            </div>
-            <div className="div__stack">
-              <i className="bx bxl-sass" />
-              <span>Sass</span>
+              <i className="bx bxl-redux" />
+              <span>Redux</span>
             </div>
             <div className="div__stack">
               <i className="bx bxl-nodejs" />
               <span>NodeJS</span>
             </div>
             <div className="div__stack">
-              <i className="bx bxl-redux" />
-              <span>Redux</span>
+              <i className="bx bxl-sass" />
+              <span>Sass</span>
+            </div>
+            <div className="div__stack">
+              <i className="bx bxl-bootstrap" />
+              <span>Bootstrap</span>
             </div>
           </div>
         </div>
