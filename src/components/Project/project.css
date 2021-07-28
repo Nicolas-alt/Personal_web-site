@@ -62,8 +62,9 @@ a {
 }
 
 .div__info a {
-  color: white;
   position: relative;
+  color: white;
+  font-size: 1.3em;
 }
 
 .div__info a::after {
@@ -121,7 +122,7 @@ a {
 
   .div__info--normal {
     left: 0;
-    padding-left: .5em;
+    padding-left: 0.5em;
   }
 
   .div__info--reverse {
@@ -139,6 +140,19 @@ a {
   .div__info h2 {
     font-size: 2.5em;
     align-items: flex-end;
+  }
+}
+
+@media (min-width: 869px) and (max-width: 1100px) {
+  .article__project {
+    position: relative;
+  }
+
+  .div__info--normal {
+    position: absolute;
+    bottom: -11px;
+    width: 400px;
+    background-color: hsla(249, 100%, 75%, 0.267);
   }
 }
 
