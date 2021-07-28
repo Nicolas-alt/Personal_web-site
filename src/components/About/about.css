@@ -50,11 +50,16 @@
 
   .div__text p {
     font-size: 1.2em;
+    text-align: justify;
   }
 }
 
 @media screen and (max-width: 570px) {
   .div__text h2 {
     font-size: 2.5em;
+  }
+
+  .h3__earthText {
+    font-size: 2.2em;
   }
 }

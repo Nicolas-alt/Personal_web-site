@@ -10,14 +10,14 @@
   },
   "about": {
     "title": "Sobre mí",
-    "p1": "¡Hola! Soy Nicolas Jiménez, desarrollador front-end. Me encanta crear interfaces y codificar productos interactivos. Estoy buscando un puesto de tiempo completo como desarrollador front-end.",
+    "p1": "Soy desarrollador front-end. Me encanta crear interfaces y codificar productos interactivos. Estoy buscando un puesto de tiempo completo como desarrollador front-end.",
     "p2": "Mi interés en el desarrollo web comenzó en 2017 cuando decidí investigar qué eran las dev tools, avanzando rápidamente hasta el día de hoy. Mi enfoque principal en estos días es crear productos y experiencias digitales accesibles e inclusivos.",
     "p3": "Aquí hay algunas tecnologías con las que he estado trabajando recientemente:",
-    "finalText": "Listo para trabajar en ideas increibles."
+    "finalText": "Listo para trabajar en ideas increibles alrededor del mundo."
   },
   "footer": {
     "h3": "¿Interesad@ en trabajar conmigo?",
     "a": "¡Hablemos!",
-    "p": "© 2021 Creado por Nicolas Jiménez"
+    "p": "Creado por Nicolas Jiménez"
   }
 }

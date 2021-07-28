@@ -1,12 +1,11 @@
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import { motion } from 'framer-motion'
+import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion'
 import PropTypes from 'prop-types'
 import { memo, Suspense, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { easter } from '../../utils/easterEgg'
 import Programmer from '../Programmer/Programmer'
-import TiltWrapper from '../TiltWrapper/TiltWrapper'
 import './home.css'
 
 const homeVariants = {
@@ -26,69 +25,71 @@ const Home = () => {
   }, [])
 
   return (
-    <TiltWrapper>
-      <motion.section className="section_home" variants={homeVariants}>
-        <ul className="ul__links">
-          <li>
-            <a
-              href="https://github.com/Nicolas-alt"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="i__socialLink bx bxl-github" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/Nicolas35103573"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="i__socialLink bx bxl-twitter" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="i__socialLink bx bxl-linkedin" />
-            </a>
-          </li>
-        </ul>
-        <div className="div__home">
-          <div className="div__homeContent">
-            <div>
-              <p>{t('home.p')}</p>
-              <AnimateLetters text="Nicolas" styleName="h1__firtsName" />
-              <br />
-              <AnimateLetters text="Jiménez" styleName="h1__lastName" />
-              <br />
-              <AnimateLetters text="Front" styleName="h1__firtsName" />
-              <br />
-              <AnimateLetters text="End Developer" styleName="h1__lastName" />
+    <AnimateSharedLayout type="crossfade">
+      <AnimatePresence>
+        <motion.section className="section_home" variants={homeVariants}>
+          <ul className="ul__links">
+            <li>
+              <a
+                href="https://github.com/Nicolas-alt"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="i__socialLink bx bxl-github" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/Nicolas35103573"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="i__socialLink bx bxl-twitter" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nicolas-jimenez-b20660184/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="i__socialLink bx bxl-linkedin" />
+              </a>
+            </li>
+          </ul>
+          <div className="div__home">
+            <div className="div__homeContent">
+              <div>
+                <p className="p__home">{t('home.p')}</p>
+                <AnimateLetters text="Nicolas" styleName="h1__firtsName" />
+                <br />
+                <AnimateLetters text="Jiménez" styleName="h1__lastName" />
+                <br />
+                <AnimateLetters text="Front" styleName="h1__firtsName" />
+                <br />
+                <AnimateLetters text="End Developer" styleName="h1__lastName" />
+              </div>
+            </div>
+            <div className="div__homeContent">
+              <Canvas
+                style={{
+                  height: '80vh',
+                  borderRadius: '40%',
+                  cursor: 'grab'
+                }}
+                camera={{ zoom: 20, position: [40, 5, 10] }}
+              >
+                <ambientLight intensity={0.5} />
+                <Suspense fallback={null}>
+                  <Programmer />
+                </Suspense>
+                <OrbitControls autoRotate />
+              </Canvas>
             </div>
           </div>
-          <div className="div__homeContent">
-            <Canvas
-              style={{
-                height: '80vh',
-                borderRadius: '40%',
-                cursor: 'grab'
-              }}
-              camera={{ zoom: 20, position: [40, 5, 10] }}
-            >
-              <ambientLight intensity={0.5} />
-              <Suspense fallback={null}>
-                <Programmer />
-              </Suspense>
-              <OrbitControls autoRotate />
-            </Canvas>
-          </div>
-        </div>
-      </motion.section>
-    </TiltWrapper>
+        </motion.section>
+      </AnimatePresence>
+    </AnimateSharedLayout>
   )
 }
 

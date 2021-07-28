@@ -2,13 +2,16 @@
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(13deg, #F8AE5B 14%, #F8AE5B 64%);
+  background: linear-gradient(13deg, #f8ae5b 14%, #f8ae5b 64%);
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(13deg, #F8AE5B 14%, #F8AE5B 64%);
+  background: linear-gradient(13deg, #f8ae5b 14%, #f8ae5b 64%);
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 10px;
@@ -30,8 +33,7 @@ h1,
 h2,
 h3,
 h4,
-h5
-p {
+h5 p {
   margin: 0;
 }
 
@@ -42,4 +44,8 @@ a {
 main {
   min-height: 100%;
   min-width: 100%;
+}
+
+section {
+  max-width: 1800px;
 }
